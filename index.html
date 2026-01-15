@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andreia & André</title>
+
+    <!-- Bootstrap CSS (via CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">    <!-- Custom Styles -->
+    <style>
+        body {
+            background: #efdccd;
+            font-family: "Libre Baskerville", serif;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .row > * {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .header {
+            background-image: url("images/black_flowers.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right bottom;
+        }
+
+        .header-text {
+            font-family: 'Gwendolyn', cursive;
+            font-weight: 700;
+        }
+
+        .names {
+            font-size: 66px;
+            line-height: 62px;
+            padding-top: 24px;
+        }
+
+        .date {
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        #and {
+            margin-top: 7px;
+        }
+
+        .description {
+            font-size: 0.8rem;
+        }
+
+        .section-title {
+            font-family: 'Gwendolyn', cursive;
+            font-size: 34px;
+            font-weight: 700;
+        }
+
+        .schedule-item {
+            border-left: 1px solid #000000;
+            padding-left: 16px;
+            position: relative;
+            padding-bottom: 32px;
+            padding-top: 0;
+            line-height: 1.3;
+            font-size: 0.8rem;
+        }
+
+        .schedule-item::before {
+            content: "";
+            position: absolute;
+            left: -5px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #000000;
+            border-radius: 50%;
+        }
+
+        .schedule-item-bottom {
+            border-left: none;
+            padding-left: 16px;
+            position: relative;
+            padding-top: 0;
+            line-height: 1.3;
+            font-size: 0.8rem;
+        }
+
+        .schedule-item-bottom::before {
+            content: "";
+            position: absolute;
+            left: -5px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #000000;
+            border-radius: 50%;
+        }
+
+        .maps-iframe {
+            height: 350px;
+        }
+
+        .contacts-text {
+            font-size: 0.8rem;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            border: 1px solid #000000;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 767px) {
+            .contact-item:nth-of-type(-n+1) {
+                border-bottom: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="row">
+        <!--Header-->
+        <div class="col-12 header">
+            <div class="row">
+                <div class="col-12 header-text names">
+                    <div>Andreia</div>
+                    <div id="and">&</div>
+                    <div>André</div>
+                </div>
+                <div class="col-12 mt-4 mb-4 header-text date">
+                    22.09.2026
+                </div>
+            </div>
+        </div>
+
+        <!--Couple photos-->
+        <div class="col-12">
+
+        </div>
+
+        <!--Text-->
+        <div class="col-12 mt-3 description">
+            <p>Caros amigos e familia,</p>
+            <p>É com grande alegria que te convidamos a celebrar connosco um dos dias mais especiais das nossas
+                vidas.</p>
+            <p>Depois de tantos momentos partilhados, decidimos dar o próximo passo e dizer “sim”, rodeados das
+                pessoas que mais amamos. A tua presença será muito importante para tornar este dia ainda mais
+                memorável.</p>
+            <p>Agora só falta saber se vens! 😊</p>
+            <p>Começamos às 15h com a cerimónia civil, que terá lugar na própria quinta.</p>
+            <p>Após a cerimónia: cocktail, jantar, surpresas e muita festa até ao fim 🎉</p>
+            <p>Agradecemos que confirmes a tua presença até 30 de junho de 2026</p>
+        </div>
+
+        <!--Schedule-->
+        <div class="col-12 mt-4">
+            <div class="text-center section-title">Horário</div>
+            <div class="schedule-item">
+                12H00<br/>
+                Cerimónia nada chata e bué fixe
+            </div>
+            <div class="schedule-item-bottom pb-0">
+                14H00<br/>
+                Festarola muito menos chata e bem mais fixe
+            </div>
+            <div class="text-center section-title mt-5">Local</div>
+            <div class="row mt-2">
+                <div class="col-12 d-flex justify-content-center ps-md-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.7253571526508!2d-9.080332700000001!3d38.470901399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd194e1f1e8e5c9d%3A0xa349bd9070de2b45!2sQuinta%20dos%20Sonhos!5e0!3m2!1spt-PT!2spt!4v1768496414018!5m2!1spt-PT!2spt"
+                            class="maps-iframe" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!--Contacts-->
+        <div class="col-12 p-0 pb-5 mt-4">
+            <div class="row">
+                <div class="col-12 text-center mt-4 contacts-text">
+                    <p>Qualquer dúvida não hesites em contactar</p>
+                </div>
+                <div class="col-12 p-0">
+                    <div class="row">
+                        <div class="col-12 col-md-6 text-center contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <span>Andreia</span>
+                            <span>91XXXXXXX</span>
+                        </div>
+                        <div class="col-12 col-md-6 text-center contact-item">
+                            <i class="bi bi-telephone"></i>
+                            <span>André</span>
+                            <span>93XXXXXXX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</main>
+
+<!-- Bootstrap JS bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
